@@ -1,0 +1,47 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 20:19:59 
+ * @Last Modified by:   saber2pr 
+ * @Last Modified time: 2019-04-06 20:19:59 
+ */
+html,
+body {
+  /* 取消页面边距 */
+  margin: 0;
+}
+
+.header {
+  background-color: blue;
+  /* 相对浏览器窗口 */
+  position: fixed;
+  /* 定位到顶部 */
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  /* 文字水平居中 */
+  text-align: center;
+  /* 文字行高等于容器height时垂直居中 */
+  line-height: 100px;
+}
+
+.container {
+  background-color: cadetblue;
+  /* 容器在header下面 */
+  margin-top: 10vh;
+  width: 70%;
+}
+
+.container>.item {
+  background-color: aquamarine;
+  height: 200px;
+  margin: 10px;
+}
+
+.right {
+  background-color: chartreuse;
+  width: 30%;
+  position: fixed;
+  right: 0;
+  /* 顶部高度为10vh，所以还剩下90vh */
+  height: 90vh;
+}

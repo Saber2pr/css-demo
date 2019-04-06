@@ -1,0 +1,19 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 19:23:06 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 19:47:44
+ */
+.container {
+  background-color: aquamarine;
+  width: 300px;
+  height: 600px;
+  /* 溢出内容滚动 */
+  overflow-y: auto;
+}
+
+.container>.item {
+  background-color: brown;
+  height: 100px;
+  margin: 10px;
+}

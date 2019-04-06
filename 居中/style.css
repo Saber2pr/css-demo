@@ -1,0 +1,23 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 19:23:02 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 19:34:13
+ */
+.container {
+  background-color: blue;
+  width: 500px;
+  height: 500px;
+  /* flex容器 */
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+}
+
+.container>.item {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  /* 垂直居中 */
+  align-self: center;
+}

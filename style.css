@@ -1,0 +1,31 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 20:29:21 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 20:33:25
+ */
+html,
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: cadetblue;
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.container {
+  background-color: aquamarine;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container>.item {
+  line-height: 2rem;
+}

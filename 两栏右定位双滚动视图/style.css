@@ -1,0 +1,49 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 19:23:10 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 20:19:43
+ */
+html,
+body {
+  /* 取消页面边距 */
+  margin: 0;
+}
+
+.container {
+  background-color: aquamarine;
+  width: 100%;
+  /* flex容器 */
+  display: flex;
+  /* x轴分布 */
+  flex-direction: row;
+}
+
+.container>.left {
+  background-color: blue;
+  width: 70%;
+}
+
+.container>.right {
+  background-color: chartreuse;
+  width: 30%;
+  position: fixed;
+  /* 小技巧，隐藏右侧scrollBar */
+  right: -15px;
+  /* 溢出滚动 */
+  overflow-y: auto;
+  /* 必须设置容器高度，内容才会溢出，否则被撑开 */
+  height: 100vh;
+}
+
+.container>.left>.item {
+  height: 200px;
+  background-color: brown;
+  margin: 20px;
+}
+
+.container>.right>.item {
+  background-color: darkmagenta;
+  height: 400px;
+  margin: 20px;
+}

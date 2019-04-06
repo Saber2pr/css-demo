@@ -1,0 +1,26 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-06 19:22:53 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 19:28:00
+ */
+/**
+ * 容器height不设置，由子元素撑开，否则子元素y方向会溢出
+ */
+.container {
+  background-color: aquamarine;
+  width: 70%;
+  /* x轴溢出内容滚动 */
+  overflow-x: auto;
+  /* 不换行，强制溢出 */
+  white-space: nowrap;
+}
+
+.container>.item {
+  background-color: brown;
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  /* 行内块元素 */
+  display: inline-block;
+}
