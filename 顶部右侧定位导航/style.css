@@ -1,8 +1,8 @@
 /*
  * @Author: saber2pr 
  * @Date: 2019-04-06 20:19:59 
- * @Last Modified by:   saber2pr 
- * @Last Modified time: 2019-04-06 20:19:59 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-06 20:41:32
  */
 html,
 body {
@@ -21,7 +21,7 @@ body {
   /* 文字水平居中 */
   text-align: center;
   /* 文字行高等于容器height时垂直居中 */
-  line-height: 100px;
+  line-height: 10vh;
 }
 
 .container {
