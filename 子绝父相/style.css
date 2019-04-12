@@ -1,0 +1,40 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-12 23:21:38 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-12 23:29:16
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  height: 300px;
+  background-color: cadetblue;
+}
+
+.container>.parent {
+  background-color: aquamarine;
+  /* 父相 */
+  position: relative;
+  width: 200px;
+  height: 100px;
+  /* css3居中 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent>.child {
+  /* 子绝 */
+  position: absolute;
+  background-color: aqua;
+  width: 30%;
+  height: 30%;
+  /* css3居中， 相对父元素 */
+  left: 50%;
+  transform: translate(-50%);
+  top: -10px;
+}
