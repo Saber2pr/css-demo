@@ -1,0 +1,78 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-13 14:41:03 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-13 15:44:56
+ */
+/**
+ * float就是在增加心智负担，最好还是用flex
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.nav {
+  background-color: #1a34a7;
+  height: 2.5rem;
+  /* 文字垂直居中 */
+  line-height: 2.5rem;
+}
+
+.nav>li {
+  /* 浮动为行内排列 */
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+
+.nav>li>a {
+  color: aliceblue;
+}
+
+.nav>li:hover {
+  background-color: sienna;
+}
+
+.nav>li:hover .menu {
+  /* hover时show */
+  transform: translateY(0%);
+}
+
+.menu {
+  /* 注意延迟防抖动 */
+  transition: 0.2s 0.1s;
+  width: inherit;
+  background-color: #4e8573;
+  /* 脱离文档流 */
+  position: absolute;
+  /* 初始化隐藏 */
+  transform: translateY(-100%);
+  /* 被覆盖隐藏 */
+  z-index: -1;
+}
+
+.menu>li>a {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+}
+
+.menu>li>a:hover {
+  background-color: black;
+}
