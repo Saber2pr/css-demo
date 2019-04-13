@@ -1,0 +1,42 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-13 10:27:19 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-13 11:07:27
+ */
+/**
+ * 注意，middle必须在left和right之后（不利于主内容优先渲染）。
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* 设置容器高度 */
+  height: 100vh;
+}
+
+.left {
+  background-color: blue;
+  /* 左浮动 */
+  float: left;
+  width: 200px;
+  height: inherit;
+}
+
+.right {
+  background-color: aqua;
+  /* 右浮动 */
+  float: right;
+  width: 100px;
+  height: inherit;
+}
+
+.middle {
+  background-color: aquamarine;
+  /* 外边距 */
+  margin-left: 200px;
+  margin-right: 100px;
+  height: inherit;
+}

@@ -1,0 +1,45 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-13 10:45:01 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-13 10:50:58
+ */
+/**
+ * 和浮动差不多，优点是left right middle没有顺序
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  /* 绝对定位 */
+  position: absolute;
+  /* 必须，否则会排到下面 */
+  top: 0;
+  /* 靠左 */
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-color: aqua;
+}
+
+.right {
+  /* 绝对定位 */
+  position: absolute;
+  /* 必须，否则会排到下面 */
+  top: 0;
+  /* 靠右 */
+  right: 0;
+  width: 100px;
+  height: 300px;
+  background-color: blueviolet;
+}
+
+.middle {
+  background-color: aquamarine;
+  height: 500px;
+  /* 外边距 */
+  margin-left: 200px;
+  margin-right: 100px;
+}

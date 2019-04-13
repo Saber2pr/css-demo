@@ -1,0 +1,44 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-13 10:39:51 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-13 11:05:59
+ */
+/**
+ * flex更简单。需要注意设置order次序，让middle标签放在最前面（优先加载主内容，性能提升）。
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* 设置容器高度 */
+  height: 100vh;
+  /* flex容器 */
+  display: flex;
+  /* x主轴 */
+  flex-direction: row;
+}
+
+.left {
+  background-color: aqua;
+  width: 200px;
+  height: inherit;
+  order: 0;
+}
+
+.middle {
+  background-color: aquamarine;
+  /* 自适应 */
+  flex-grow: 1;
+  height: inherit;
+  order: 1;
+}
+
+.right {
+  background-color: blueviolet;
+  width: 100px;
+  height: inherit;
+  order: 2;
+}
