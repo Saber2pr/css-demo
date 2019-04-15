@@ -1,0 +1,50 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-15 14:02:14 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-15 14:17:44
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: yellow;
+  color: violet;
+}
+
+/* 顺序 (link,visited) hover active */
+a:link {
+  color: aqua;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  border: 2px solid green;
+}
+
+a:active {
+  background-color: springgreen;
+}
+
+/* 伪元素 */
+/* 内容前插入 */
+a:before {
+  content: 'before:'
+}
+
+/* 内容后插入 */
+a::after {
+  content: ':after'
+}
+
+/* 清除浮动 */
+.clearfix {
+  content: '';
+  clear: both;
+  display: block;
+}

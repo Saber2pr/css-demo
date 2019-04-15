@@ -1,0 +1,38 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-15 13:44:28 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-15 13:59:34
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ie怪异盒模型 */
+/* width = content + padding + border */
+/* 元素宽度 = 内容宽度 + 内边距宽度 + 边框宽度*/
+/* 设置 padding 和 border 会挤压内容 */
+.borderBox {
+  background-color: yellowgreen;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 10px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* w3c标准盒模型 */
+/* width = content */
+/* 元素宽度 = 内容宽度 */
+/* 内容宽度不变，向外扩展 */
+.contentBox {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  box-sizing: content-box;
+  border: 10px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
