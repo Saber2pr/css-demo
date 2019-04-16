@@ -1,0 +1,51 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-16 20:19:27 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-16 20:35:30
+ */
+.target {
+  width: 0;
+  height: 0;
+  border-left: 50px solid aqua;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+}
+.target:hover {
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+@keyframes rotate {
+  0% {
+    background-color: sienna;
+  }
+  25% {
+    background-color: blueviolet;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: aqua;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+.target1 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.target1:hover {
+  animation: rotate 1s;
+}
