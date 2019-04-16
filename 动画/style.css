@@ -2,7 +2,7 @@
  * @Author: saber2pr 
  * @Date: 2019-04-16 20:19:27 
  * @Last Modified by: saber2pr
- * @Last Modified time: 2019-04-16 20:35:30
+ * @Last Modified time: 2019-04-16 20:49:57
  */
 .target {
   width: 0;
@@ -22,7 +22,7 @@
   -o-transform: rotate(360deg);
 }
 
-@keyframes rotate {
+@keyframes color {
   0% {
     background-color: sienna;
   }
@@ -44,8 +44,27 @@
   width: 100px;
   height: 100px;
   background-color: black;
+  border-radius: 50%;
+  animation: color 1s linear infinite;
 }
 
-.target1:hover {
-  animation: rotate 1s;
+.target2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  border-left-color: rgb(255, 127, 197);
+  animation: loading linear infinite;
+  animation-duration: 1s;
+  /* translateZ会启用硬件加速 */
+  transform: translateZ(0);
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
