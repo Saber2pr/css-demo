@@ -1,0 +1,54 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-17 15:00:33 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-17 15:58:19
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* 父相 */
+  position: relative;
+  width: 100px;
+  height: 100px;
+  /* 隐藏未播放的图 */
+  overflow: hidden;
+}
+
+.slider {
+  /* 子绝 */
+  position: absolute;
+  /* flex容器 */
+  display: flex;
+  /* 让图x轴排列 */
+  flex-direction: row;
+  /* 设置动画、时长、循环 */
+  animation: slider 5s infinite;
+}
+
+.slider > .item {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+/* 好难调。。 */
+@keyframes slider {
+  0% {
+    left: 100px;
+  }
+
+  30% {
+    left: 0px;
+  }
+
+  60% {
+    left: -100px;
+  }
+
+  100% {
+    left: -200px;
+  }
+}
