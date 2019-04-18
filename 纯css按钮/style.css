@@ -1,0 +1,52 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-18 21:31:09 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-18 21:44:59
+ */
+/**
+ * 按钮应该需要监听点击事件，事件监听需要js实现，不过
+ * html里有一个标签input-checkbox可以实现事件的监听！
+ * 原理：
+ * checkbox被点击后会应用checked伪类，再次点击后会取消checked状态，
+ * 但是checkbox的样式是个复选框，怎么实现按钮？
+ * html提供了一个label标签，用来关联input元素（for属性绑定id）
+ * 所以可以隐藏input，改变label为按钮就可以
+ * 点击label会传递给input-checkbox
+ */
+.chooseBtn {
+  /* 隐藏复选框 */
+  display: none;
+}
+
+.choose-label {
+  box-shadow: #ccc 0px 0px 0px 1px;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  /* 父相 */
+  position: relative;
+  background-color: #bdbdbd;
+}
+/* 伪元素，是label子节点 */
+.choose-label:before {
+  content: '';
+  /* 子绝 */
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+/* 被选中就伪元素(原点)右移，再次点击取消checked状态，即恢复 */
+/* 注意选择器，要匹配checkbox被选中同时兄弟节点的label */
+.chooseBtn:checked+.choose-label:before {
+  left: 20px;
+}
+/* 被选中背景变蓝 */
+.chooseBtn:checked+.choose-label {
+  background-color: #51ccee;
+}
