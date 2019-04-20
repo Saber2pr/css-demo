@@ -1,0 +1,11 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-04-20 18:19:43 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-04-20 18:22:56
+ */
+.selectDisable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
